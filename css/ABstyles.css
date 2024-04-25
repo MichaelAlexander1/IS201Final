@@ -1,0 +1,87 @@
+
+body {
+    background: #d3d3d3; 
+    color: #000000
+; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.navbar {
+    background: rgba(25, 25, 25, 0.9); 
+    border-bottom: 1px solid #444; 
+}
+
+.navbar-brand, .nav-link {
+    color: #A9A9A9
+; /* Soft gray text */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #bbb; 
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #000000
+
+; 
+}
+
+h2 {
+    font-size: 2em;
+    color: #000000
+; 
+}
+
+.about-video, .about-stats {
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+}
+
+.about-video iframe, .about-stats iframe {
+    border: none;
+    width: 100%;
+    height: 450px;
+    transition: transform 0.3s ease;
+}
+
+.about-video iframe:hover, .about-stats iframe:hover {
+    transform: scale(1.05); 
+}
+
+footer {
+    background: rgba(20, 20, 20, 0.95);
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .about-video iframe, .about-stats iframe {
+        height: 300px; 
+    }
+}
